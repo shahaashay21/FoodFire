@@ -2,7 +2,7 @@
 	<div class="visible-xs container-fluid" id="top-header" style="background: #000; padding: 5px;">
 		<center>
 			<div>
-	    		<a style="margin-right:7%" class="head-text icon-mail" href="mailto:support@foodfire.net">support@foodfire.net</a>
+	    		<a style="margin-right:7%" class="head-text icon-mail" href="mailto:support@foodfire.in">support@foodfire.in</a>
 	    		<span class="head-text icon-phone"> 9712318526</span>
 	    	</div>
 	    </center>

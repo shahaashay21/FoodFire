@@ -347,7 +347,7 @@ button:hover{
               alertline("alert-notify-success","<strong>Success! </strong>You have successfully registered.");
               window.setTimeout(function() {
                   // Redirects to new destination
-                  window.location = 'http://vendor.foodfire.net';
+                  window.location = 'http://vendor.foodfire.in';
               }, 1000);
             }else if(response == 'Network Problem')
             {

@@ -311,7 +311,7 @@ button:hover{
               alertline("alert-notify-success","<b>Password reset link</b> has been sent to your Email");
               window.setTimeout(function() {
                   // Redirects to new destination
-                  window.location = 'http://vendor.foodfire.net';
+                  window.location = 'http://vendor.foodfire.in';
               }, 1000);
             }else{
               alertline("alert-notify-danger","Network connection problem");

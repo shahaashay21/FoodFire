@@ -29,7 +29,7 @@ return array(
 	*/
 
 	// 'host' => 'smtp.mailgun.org',
-	'host' => 'mail.foodfire.net',
+	'host' => 'mail.foodfire.in',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'support@foodfire.net', 'name' => 'Foodfire.Net'),
+	'from' => array('address' => 'support@foodfire.in', 'name' => 'Foodfire.In'),
 
 	/*
 	|--------------------------------------------------------------------------

@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['domain' => 'admin.foodfire.net'], function()
+Route::group(['domain' => 'admin.foodfire.in'], function()
 {
 
 
@@ -20,7 +20,7 @@ Route::group(['domain' => 'admin.foodfire.net'], function()
 });
 
 
-Route::group(['domain' => 'vendor.foodfire.net'], function()
+Route::group(['domain' => 'vendor.foodfire.in'], function()
 {
 
     // Route::get('/', 'Search@main');
@@ -170,8 +170,8 @@ $approute = function(){
     });
 };
 
-Route::group(['domain' => 'foodfire.net'], $approute);
-Route::group(['domain' => 'www.foodfire.net'], $approute);
+Route::group(['domain' => 'foodfire.in'], $approute);
+Route::group(['domain' => 'www.foodfire.in'], $approute);
 // Route::group(['domain' => 'localhost'], $approute);
 
 

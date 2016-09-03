@@ -229,16 +229,16 @@ class Checkout extends BaseController {
 				$files_written = File::put('public/receipt/'.$orderid, $emaildata);
 				Mail::send('emails.orders.order', array('emaildata' => $emaildata), function($message) use ($cus_email, $cus_name, $orderid)
 				{
-					$message->from('care@foodfire.net', 'FoodFire');
+					$message->from('care@foodfire.in', 'FoodFire');
 				    $message->to($cus_email, ucwords($cus_name));
 				    $message->subject('FoodFire order #'.$orderid.' has been successfuly placed');
-				    $message->bcc(array('receipt@foodfire.net', 'foodfireonline@gmail.com'));
+				    $message->bcc(array('receipt@foodfire.in', 'foodfireonline@gmail.com'));
 				});
 
 				// $filedata = File::get('receipt/'.$orderid);
 				// Mail::send('emails.orders.order', array('emaildata' => $filedata), function($message) use ($cus_email, $cus_name, $orderid)
 				// {
-				// 	$message->from('care@foodfire.net', 'FoodFire');
+				// 	$message->from('care@foodfire.in', 'FoodFire');
 				//     $message->to('aashay2105@gmail.com', ucwords($cus_name))->subject('FoodFire order #'.$orderid.' receipt');
 				// });
 			}
@@ -287,7 +287,7 @@ class Checkout extends BaseController {
 			$cartData['cart'] = '<div style="width:90%; padding:10px; font-family:Comic Sans MS,san seif">
 								<div class="items-category-white-box"  style="background-color:#fff; border:#dfdfdf solid 1px; width:550px">
 							<h1 style="font-size: 18px; padding-left: 16px; padding-top: 20px;">
-						    	<img class="img-responsive" width="150px" height="40px" src="http://www.foodfire.net/public/images/FoodSymbol.png" style="margin-bottom:10px" alt="FoodFire"><b style="float:right; margin-right:10px">ORDER # 500000014</b>
+						    	<img class="img-responsive" width="150px" height="40px" src="http://www.foodfire.in/public/images/FoodSymbol.png" style="margin-bottom:10px" alt="FoodFire"><b style="float:right; margin-right:10px">ORDER # 500000014</b>
 						  	</h1>
 						  	<hr style="border-top: 5px solid #db2e2e; float: left; height: 0; margin-top: 18px; width: 30%; margin-left: 0px"><hr style="margin: 34px 0px 0px; border-top: 1px solid #d2d2d2; height: 0;"><br>
 
@@ -326,7 +326,7 @@ class Checkout extends BaseController {
 								<div class="items-category-white-box"  style="background-color:#fff; border:#dfdfdf solid 1px; width:560px; margin:auto;">
 							<div style="font-size: 15px; padding-left: 16px; padding-top: 20px; width:100%">
 								<div style="width:50%; float:left">
-						    		<img class="img-responsive" width="150px" height="40px" src="http://www.foodfire.net/public/images/FoodSymbol.png" style="float:left; margin-bottom:10px" alt="FoodFire">
+						    		<img class="img-responsive" width="150px" height="40px" src="http://www.foodfire.in/public/images/FoodSymbol.png" style="float:left; margin-bottom:10px" alt="FoodFire">
 						    	</div>
 						    	<div style="width:40%; float:right; margin-right:15px">
 						    		<b style="float:right; margin-right:10px">ORDER # '.$orderunkid.'</b>
@@ -412,7 +412,7 @@ class Checkout extends BaseController {
 																		  						<small>- '.ucwords($subitem[$m]['item_name']).'</small>
 																		  					</div>
 																		  					<div class="col-xs-4 no-padding" style="float:left; width:33.3333%">
-																		  						<small style="float:right;"><img src="http://www.foodfire.net/public/images/inr.png" height="10" width="10"> '.number_format(($subitem[$m]['item_price']),2,".","").'</small>
+																		  						<small style="float:right;"><img src="http://www.foodfire.in/public/images/inr.png" height="10" width="10"> '.number_format(($subitem[$m]['item_price']),2,".","").'</small>
 																		  					</div>';
 															  				}
 															  				array_push($del_sub_array, $subitem[$m]['subitemid']);
@@ -430,7 +430,7 @@ class Checkout extends BaseController {
 												  				<div class="col-xs-4 no-padding" style="float:right; text-align:right; width:33%">';
 												  					$item_total = (intval($itemname[$k]['price'])*intval($cart[$l]['qty']))+intval($am_subitem);
 												  					$am_vendor += $item_total;
-												$cartData['cart'] .=		'<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.number_format(($item_total),2,".","").'
+												$cartData['cart'] .=		'<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.number_format(($item_total),2,".","").'
 												  				</div>
 												  			</div>
 											  			</div>
@@ -444,7 +444,7 @@ class Checkout extends BaseController {
 										  				Vendor Sub-Total:
 										  			</div>
 										  			<div class="col-xs-4 no-padding" float:left; width:33.3333%">
-										  				<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.number_format(($am_vendor),2,".","").'
+										  				<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.number_format(($am_vendor),2,".","").'
 										  			</div>';
 								  			if($vendorname[$j]['tax'] != null || $vendorname[$j]['tax'] != '')
 								  			{
@@ -453,7 +453,7 @@ class Checkout extends BaseController {
 									  				Taxes (Vendor - '.$vendorname[$j]['tax'].'%):
 									  			</div>
 									  			<div class="col-xs-4 no-padding" style="float:left; width:33.3333%">
-									  				<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.round(($am_vendor*$vendorname[$j]['tax'])/100,2).'
+									  				<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.round(($am_vendor*$vendorname[$j]['tax'])/100,2).'
 									  			</div>';
 								  			}
 
@@ -470,14 +470,14 @@ class Checkout extends BaseController {
 								  				Sub-Total:
 								  			</div>
 								  			<div class="col-xs-4 no-padding" style="float:left; width:33.3333%">
-								  				<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.number_format(($am_total),2,".","").'
+								  				<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.number_format(($am_total),2,".","").'
 								  			</div>
 
 								  			<div class="col-xs-8 no-padding" style="float:left; width:66.6667%">
 								  				Taxes (Vendor):
 								  			</div>
 								  			<div class="col-xs-4 no-padding" style="float:left; width:33.3333%">
-								  				<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.number_format(($am_tax),2,".","").'
+								  				<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.number_format(($am_tax),2,".","").'
 								  			</div>';
 								  			$am_delivery = number_format(($vendor_count*25),2,".","");
 								  			$am_del_tax = number_format((($vendor_count*25)*0.14),2,".","");
@@ -489,14 +489,14 @@ class Checkout extends BaseController {
 								  			}
 						$cartData['cart'] .=		'</div>
 								  			<div class="col-xs-4 no-padding" style="float:left; width:33.3333%">
-								  				<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.$am_delivery.'
+								  				<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.$am_delivery.'
 								  			</div>
 
 								  			<div class="col-xs-8 no-padding" style="float:left; width:66.6667%">
 								  				Service Tax(Delivery - 14%):
 								  			</div>
 								  			<div class="col-xs-4 no-padding" style="float:left; width:33.3333%">
-								  				<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.$am_del_tax.'
+								  				<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.$am_del_tax.'
 								  			</div>
 						  				</div>
 					  				</div>
@@ -510,7 +510,7 @@ class Checkout extends BaseController {
 										  			</div>
 										  			<div class="col-xs-6" style="padding:5px 15px">';
 										  				$grand_total = number_format(($am_total+$am_tax+$am_delivery+$am_del_tax),2,".","");
-						$cartData['cart'] .=	  				'<img src="http://www.foodfire.net/public/images/inr.png" height="12" width="12"> '.$grand_total.'
+						$cartData['cart'] .=	  				'<img src="http://www.foodfire.in/public/images/inr.png" height="12" width="12"> '.$grand_total.'
 										  			</div>
 							  					</div>
 						  					</center>

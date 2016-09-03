@@ -542,7 +542,7 @@ $('body').css('background','#fafafa');
 			data += "<div class='cat-box col-lg-12'> \
 							\
 							<div class='img-circle avatarex'> \
-								<img class='img-circle category-item-descex' height='100%' width='100%' src='http://www.foodfire.net/"+x[i].imgsrc+"'> \
+								<img class='img-circle category-item-descex' height='100%' width='100%' src='http://www.foodfire.in/"+x[i].imgsrc+"'> \
 							</div> \
 							<article> \
 								<div class='ribbon ";
@@ -757,7 +757,7 @@ if(xsvalue != 'none'){
 						<div class='row'>\
 							<div class='col-lg-4' style='padding:0;'>\
 								<div class='img-circle outer-round'>\
-									<img class='img-circle inner-round' src='http://www.foodfire.net/"+data[x].imgsrc+"'>\
+									<img class='img-circle inner-round' src='http://www.foodfire.in/"+data[x].imgsrc+"'>\
 								</div>\
 							</div>\
 							<div class='col-lg-8' style='padding:0'>\

@@ -25,7 +25,7 @@
 				</div>
 				<div style="margin: 0 15px; float:left">
 					<div class="img-circle avatar" style="height:30px; width:30px; margin-top:0px; float:left">
-						<img class="img-circle" height="100%" width="100%" alt="Profile" src="http://www.foodfire.net/public/images/aashay.jpg">
+						<img class="img-circle" height="100%" width="100%" alt="Profile" src="http://www.foodfire.in/public/images/aashay.jpg">
 					</div>
 					<span style="margin-left:10px; font-size:14px; color:#fff">Aashay Shah</span>
 				</div>
@@ -62,7 +62,7 @@
 				</div>
 				<div style="margin: 0 0 0 15px; float:left">
 					<div class="img-circle avatar" style="height:30px; width:30px; margin-top:0px">
-						<img class="img-circle" height="100%" width="100%" alt="Profile" src="http://www.foodfire.net/public/images/aashay.jpg">
+						<img class="img-circle" height="100%" width="100%" alt="Profile" src="http://www.foodfire.in/public/images/aashay.jpg">
 					</div>
 				</div>
 			</div>

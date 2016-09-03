@@ -19,6 +19,12 @@ FoodFire - Food Delivery Anand | Order Food Online | Home Delivery Food | Online
 <div class="container-fluid img-responsive" id="header-bottom-wrap">
 	<section id="header-bottom">
 		<div class="row">
+			<div class="hidden-xs col-lg-12">
+				<center><div style="color:#db2e2e">DEMO FOR NOW -- USE SAHYOG RESTAURANT TO ORDER</div></center>
+			</div>
+			<div class="col-xs-12 visible-xs">
+				<center><div style="color:#db2e2e; margin-top:50px;">DEMO FOR NOW -- USE SAHYOG RESTAURANT TO ORDER</div></center>
+			</div>
 			<!-- <div class="col-lg-6 wow bounceInLeft"> -->
 			<div class="col-lg-6 leftt">
 				<center>

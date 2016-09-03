@@ -25,7 +25,7 @@
     </div>
     <div style="margin-top: 20px; background: #4dd347; height: 35px; padding-top:6px">
     	<center>
-    	<a style="color: #fff; text-decoration: underline; font-weight:bold" href="whatsapp://send?text=Hey, checkout this amazing service, I am using it for my food delivery. Foodfire - Food at your doorstep, visit http://foodfire.net or call: 919712318526" data-action="share/whatsapp/share">Share via Whatsapp</a>
+    	<a style="color: #fff; text-decoration: underline; font-weight:bold" href="whatsapp://send?text=Hey, checkout this amazing service, I am using it for my food delivery. Foodfire - Food at your doorstep, visit http://foodfire.in or call: 919712318526" data-action="share/whatsapp/share">Share via Whatsapp</a>
     	</center>
     </div>
     <center><div style="margin-top: 15px">
@@ -330,7 +330,7 @@
 	<div class="row">
 		<div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
     	<div class="hidden-xs col-sm-5 col-md-4 col-lg-6">
-    		<a class="head-text icon-mail" href="mailto:support@foodfire.net">support@foodfire.net</a>
+    		<a class="head-text icon-mail" href="mailto:support@foodfire.in">support@foodfire.in</a>
     		&nbsp;&nbsp;
     		<span class="head-text icon-phone"> 09712318526 </span>
     	</div>

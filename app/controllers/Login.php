@@ -33,7 +33,7 @@ class Login extends BaseController{
 		    	$name = Input::get('name');
 		    	$email = Input::get('email');
 		    	$mobile = Input::get('mobile');
-		    	$userimg = 'http://www.foodfire.net/public/images/blank_user.png';
+		    	$userimg = 'http://www.foodfire.in/public/images/blank_user.png';
 
 		    	$confirmation_code = str_random(30);
 
